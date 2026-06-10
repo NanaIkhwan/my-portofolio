@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Najwa Ikhwan Maulana — Portfolio</title>
+  <meta name="description" content="Portfolio Najwa Ikhwan Maulana — UI/UX Designer, Mobile Developer & Fotografer dari Universitas Harkat Negeri" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">NIM</a>
+      <ul class="nav-links">
+        <li><a href="#about">Tentang</a></li>
+        <li><a href="#skills">Keahlian</a></li>
+        <li><a href="#projects">Proyek</a></li>
+        <li><a href="#contact">Kontak</a></li>
+      </ul>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <span class="sun-icon">☀</span>
+        <span class="moon-icon">☾</span>
+      </button>
+      <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav-mobile" id="navMobile">
+      <a href="#about" class="mobile-link">Tentang</a>
+      <a href="#skills" class="mobile-link">Keahlian</a>
+      <a href="#projects" class="mobile-link">Proyek</a>
+      <a href="#contact" class="mobile-link">Kontak</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="hero-shape shape-1"></div>
+      <div class="hero-shape shape-2"></div>
+      <div class="hero-shape shape-3"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-tag animate-up delay-1">Teknik Informatika · Universitas Harkat Negeri</p>
+      <h1 class="hero-name animate-up delay-2">
+        Najwa Ikhwan<br />
+        <em>Maulana</em>
+      </h1>
+      <p class="hero-roles animate-up delay-3">
+        <span class="role">UI/UX Designer</span>
+        <span class="dot">·</span>
+        <span class="role">Mobile Developer</span>
+        <span class="dot">·</span>
+        <span class="role">Fotografer</span>
+      </p>
+      <div class="hero-cta animate-up delay-4">
+        <a href="#projects" class="btn btn-primary">Lihat Proyek</a>
+        <a href="#contact" class="btn btn-outline">Hubungi Saya</a>
+      </div>
+    </div>
+    <div class="hero-scroll animate-up delay-5">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-img-wrap reveal">
+          <div class="about-img-frame">
+            <!-- GANTI src dengan path/URL foto profilmu -->
+            <img
+              src="images/profile.jpeg"
+              alt="Najwa Ikhwan Maulana"
+              class="about-photo"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+            />
+            <div class="about-img-placeholder" style="display:none;">
+              <span>NIM</span>
+            </div>
+            <div class="about-img-deco"></div>
+          </div>
+        </div>
+        <div class="about-text reveal delay-2">
+          <p class="section-label">Tentang Saya</p>
+          <h2 class="section-title">Menciptakan pengalaman digital yang bermakna</h2>
+          <p class="about-desc">
+            Halo! Saya Najwa Ikhwan Maulana, mahasiswa Teknik Informatika di Universitas Harkat Negeri. Saya passionate di bidang desain antarmuka, pengembangan aplikasi mobile, dan fotografi kreatif.
+          </p>
+          <p class="about-desc">
+            Saya percaya bahwa teknologi dan seni bisa berjalan beriringan — menciptakan produk yang tidak hanya fungsional, tetapi juga indah dan bermakna bagi penggunanya.
+          </p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-num">15+</span>
+              <span class="stat-label">Proyek Selesai</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">3+</span>
+              <span class="stat-label">Tahun Belajar</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">8+</span>
+              <span class="stat-label">Klien Puas</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">Keahlian</p>
+        <h2 class="section-title">Apa yang bisa saya lakukan</h2>
+      </div>
+      <div class="skills-grid">
+
+        <div class="skill-card reveal delay-1">
+          <div class="skill-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+          </div>
+          <h3>UI/UX Design</h3>
+          <p>Merancang antarmuka yang intuitif dan estetis menggunakan Figma. Fokus pada user research, wireframing, prototyping, dan design system.</p>
+          <div class="skill-tags">
+            <span>Figma</span><span>Prototyping</span><span>User Research</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal delay-2">
+          <div class="skill-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg>
+          </div>
+          <h3>Mobile Development</h3>
+          <p>Membangun aplikasi mobile cross-platform yang smooth dan performan dengan Flutter. Dari konsep hingga deployment ke App Store & Play Store.</p>
+          <div class="skill-tags">
+            <span>Flutter</span><span>Dart</span><span>Firebase</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal delay-3">
+          <div class="skill-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+          <h3>Web Development</h3>
+          <p>Membangun website yang responsif dan modern dengan HTML, CSS, dan JavaScript. Tampilan yang menarik di semua ukuran layar.</p>
+          <div class="skill-tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal delay-4">
+          <div class="skill-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/><circle cx="12" cy="13" r="3"/></svg>
+          </div>
+          <h3>Fotografi</h3>
+          <p>Mengabadikan momen dengan perspektif yang unik. Spesialisasi portrait, landscape, dan product photography dengan editing profesional.</p>
+          <div class="skill-tags">
+            <span>Portrait</span><span>Landscape</span><span>Lightroom</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal delay-5">
+          <div class="skill-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+          </div>
+          <h3>Photo Editing</h3>
+          <p>Mengolah foto menjadi karya visual yang memukau. Retouching, color grading, dan manipulasi foto dengan teknik profesional.</p>
+          <div class="skill-tags">
+            <span>Photoshop</span><span>Lightroom</span><span>Color Grading</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal delay-6">
+          <div class="skill-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+          </div>
+          <h3>Branding & Visual</h3>
+          <p>Membangun identitas visual yang kuat dan konsisten. Logo design, brand guideline, dan materi pemasaran yang berkesan.</p>
+          <div class="skill-tags">
+            <span>Logo Design</span><span>Illustrator</span><span>Branding</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">Portofolio</p>
+        <h2 class="section-title">Proyek pilihan saya</h2>
+      </div>
+
+      <div class="projects-filter reveal">
+        <button class="filter-btn active" data-filter="all">Semua</button>
+        <button class="filter-btn" data-filter="uiux">UI/UX</button>
+        <button class="filter-btn" data-filter="mobile">Mobile</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="foto">Fotografi</button>
+      </div>
+
+      <div class="projects-grid" id="projectsGrid">
+
+        <div class="project-card reveal delay-1" data-category="uiux">
+          <div class="project-img" style="--accent:#6C63FF">
+            <!-- GANTI src dengan path/URL thumbnail proyek 1 -->
+            <img src="images/project-1.jpg" alt="Aplikasi E-Learning" class="project-thumb"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+            <div class="project-mockup uiux-mock" style="display:none;">
+              <div class="mock-bar"></div>
+              <div class="mock-content">
+                <div class="mock-line w80"></div>
+                <div class="mock-line w60"></div>
+                <div class="mock-card-row">
+                  <div class="mock-card-sm"></div>
+                  <div class="mock-card-sm"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-cat">UI/UX Design</div>
+            <h3>Aplikasi E-Learning</h3>
+            <p>Desain lengkap aplikasi belajar online dengan fitur video, kuis, dan sertifikat. 40+ layar termasuk design system.</p>
+            <div class="project-links">
+              <a href="https://www.figma.com/design/Xkju3Ho3dI4zHJKLaBNoLL/PostureFit---Indonesia-Atletis?node-id=4-2&t=gDZotQlqgUCAiYot-1" class="project-link">Lihat Detail →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal delay-2" data-category="mobile">
+          <div class="project-img" style="--accent:#00B4A0">
+            <!-- GANTI src dengan path/URL thumbnail proyek 2 -->
+            <img src="images/project-2.jpg" alt="FinTrack" class="project-thumb"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+            <div class="project-mockup mobile-mock" style="display:none;">
+              <div class="phone-frame">
+                <div class="phone-notch"></div>
+                <div class="phone-screen">
+                  <div class="mock-line w70"></div>
+                  <div class="mock-line w50"></div>
+                  <div class="mock-circle"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-cat">Flutter · Mobile</div>
+            <h3>FinTrack — Keuangan Pribadi</h3>
+            <p>Aplikasi manajemen keuangan pribadi berbasis Flutter. Fitur pencatatan transaksi, budget tracking, dan laporan visual.</p>
+            <div class="project-links">
+              <a href="#" class="project-link">Lihat Detail →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal delay-3" data-category="foto">
+          <div class="project-img photo-project" style="--accent:#E8956D">
+            <!-- GANTI src dengan path/URL thumbnail proyek 3 -->
+            <img src="images/project-3.jpg" alt="Urban Portraits Series" class="project-thumb"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+            <div class="photo-grid-mock" style="display:none;">
+              <div class="pg-item pg-large"></div>
+              <div class="pg-right">
+                <div class="pg-item"></div>
+                <div class="pg-item"></div>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-cat">Fotografi · Editing</div>
+            <h3>Urban Portraits Series</h3>
+            <p>Koleksi foto portrait dan street photography di sudut-sudut kota. Diedit dengan color grading cinematic tone.</p>
+            <div class="project-links">
+              <a href="#" class="project-link">Lihat Galeri →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal delay-4" data-category="web">
+          <div class="project-img" style="--accent:#3B82F6">
+            <!-- GANTI src dengan path/URL thumbnail proyek 4 -->
+            <img src="images/project-4.jpg" alt="Website UMKM Batik" class="project-thumb"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+            <div class="project-mockup web-mock" style="display:none;">
+              <div class="mock-browser">
+                <div class="browser-dots"><span></span><span></span><span></span></div>
+                <div class="browser-body">
+                  <div class="mock-line w90"></div>
+                  <div class="mock-line w70"></div>
+                  <div class="mock-line w80"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-cat">HTML · CSS · JS</div>
+            <h3>Website UMKM Batik</h3>
+            <p>Website profil dan katalog produk untuk pelaku UMKM batik lokal. Responsif, cepat, dan mudah dikelola.</p>
+            <div class="project-links">
+              <a href="#" class="project-link">Lihat Detail →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal delay-5" data-category="uiux mobile">
+          <div class="project-img" style="--accent:#F59E0B">
+            <!-- GANTI src dengan path/URL thumbnail proyek 5 -->
+            <img src="images/project-5.jpg" alt="FoodNow Food Delivery" class="project-thumb"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+            <div class="project-mockup uiux-mock" style="display:none;">
+              <div class="mock-bar"></div>
+              <div class="mock-content">
+                <div class="mock-line w60"></div>
+                <div class="mock-row">
+                  <div class="mock-pill"></div>
+                  <div class="mock-pill"></div>
+                  <div class="mock-pill active"></div>
+                </div>
+                <div class="mock-card-full"></div>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-cat">UI/UX · Flutter</div>
+            <h3>FoodNow — Food Delivery</h3>
+            <p>Desain dan implementasi aplikasi pesan antar makanan. Alur pemesanan yang simpel dengan animasi yang smooth.</p>
+            <div class="project-links">
+              <a href="#" class="project-link">Lihat Detail →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal delay-6" data-category="foto">
+          <div class="project-img photo-project" style="--accent:#8B5CF6">
+            <!-- GANTI src dengan path/URL thumbnail proyek 6 -->
+            <img src="images/project-6.jpg" alt="Nature and Landscape" class="project-thumb"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+            <div class="photo-grid-mock style2" style="display:none;">
+              <div class="pg-item"></div>
+              <div class="pg-item"></div>
+              <div class="pg-item"></div>
+              <div class="pg-item"></div>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-cat">Fotografi · Editing</div>
+            <h3>Nature & Landscape</h3>
+            <p>Eksplorasi keindahan alam Indonesia. Dari pegunungan hingga pantai, diabadikan dengan teknik komposisi yang cermat.</p>
+            <div class="project-links">
+              <a href="#" class="project-link">Lihat Galeri →</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="contact-wrap reveal">
+        <div class="contact-left">
+          <p class="section-label">Kontak</p>
+          <h2 class="section-title">Mari berkolaborasi</h2>
+          <p class="contact-desc">Punya proyek menarik atau ingin berkolaborasi? Saya selalu terbuka untuk oportunitas baru dan tantangan kreatif.</p>
+          <div class="contact-links">
+            <a href="mailto:najwa@example.com" class="contact-item">
+              <div class="contact-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <span>najwa@example.com</span>
+            </a>
+            <a href="https://instagram.com/" target="_blank" class="contact-item">
+              <div class="contact-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              </div>
+              <span>@najwaikhwan</span>
+            </a>
+            <a href="https://linkedin.com/" target="_blank" class="contact-item">
+              <div class="contact-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              </div>
+              <span>Najwa Ikhwan Maulana</span>
+            </a>
+          </div>
+        </div>
+        <div class="contact-right">
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label for="name">Nama</label>
+              <input type="text" id="name" placeholder="Nama kamu" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" placeholder="email@kamu.com" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Pesan</label>
+              <textarea id="message" rows="4" placeholder="Ceritakan proyekmu..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Kirim Pesan</button>
+            <p class="form-note" id="formNote"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <p class="footer-name">Najwa Ikhwan Maulana</p>
+        <p class="footer-copy">© 2025 · Dibuat dengan ☽ di Pekalongan</p>
+        <div class="footer-social">
+          <a href="https://github.com/" target="_blank" aria-label="GitHub">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          </a>
+          <a href="https://dribbble.com/" target="_blank" aria-label="Dribbble">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72m2.54-15.38c-3.72 4.35-8.94 5.66-16.88 5.85m19.5 1.9c-3.5-.93-6.63-.82-8.94 0-2.58.92-5.01 2.86-7.44 6.32"/></svg>
+          </a>
+          <a href="https://instagram.com/" target="_blank" aria-label="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
