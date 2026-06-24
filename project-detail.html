@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Detail Proyek — Najwa Ikhwan Maulana</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="project-detail.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">NIM</a>
+      <a href="index.html#projects" class="nav-back">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        Kembali ke Proyek
+      </a>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <span class="sun-icon">☀</span>
+        <span class="moon-icon">☾</span>
+      </button>
+    </div>
+  </nav>
+
+  <main class="page">
+    <div class="container">
+
+      <!-- BREADCRUMB -->
+      <p class="project-breadcrumb">
+        <a href="index.html">Portofolio</a> &nbsp;/&nbsp; Detail Proyek
+      </p>
+
+      <!-- ── TAB SWITCHER ── -->
+      <div class="project-tabs">
+        <button class="tab-btn active" data-tab="foto">Fotografi</button>
+        <button class="tab-btn" data-tab="uiux">UI/UX Design</button>
+        <button class="tab-btn" data-tab="3d">3D Modeling</button>
+        <button class="tab-btn" data-tab="game">Game Dev</button>
+      </div>
+
+      <!-- ══════════════════════════════
+           TAB 1 — FOTOGRAFI
+      ══════════════════════════════ -->
+      <div class="tab-panel active" id="tab-foto">
+        <div class="project-header">
+          <span class="project-cat-badge">Fotografi · Editing</span>
+          <h1 class="project-title">Urban Portraits <em>Series</em></h1>
+          <p class="project-desc">
+            Koleksi foto portrait dan street photography di sudut-sudut kota. Setiap frame diabadikan dengan cahaya natural dan komposisi yang deliberate, diedit dengan color grading cinematic tone.
+          </p>
+          <div class="project-meta">
+            <div class="meta-item">
+              <p class="meta-label">Kategori</p>
+              <p class="meta-value">Portrait · Street · Editing</p>
+            </div>
+            <div class="meta-item">
+              <p class="meta-label">Tools</p>
+              <p class="meta-value">Lightroom · Photoshop</p>
+            </div>
+            <div class="meta-item">
+              <p class="meta-label">Tahun</p>
+              <p class="meta-value">2024–2025</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Galeri foto -->
+        <div class="gallery-section">
+          <p class="section-label">Galeri</p>
+          <div class="gallery-grid">
+
+            <!-- Ganti src dengan path foto kamu, href dengan link Google Drive foto tsb -->
+            <a class="gallery-item wide" href="https://drive.google.com/file/d/GANTI_ID_FOTO_1/view" target="_blank">
+              <img src="images/foto-1.jpg" alt="Urban Portrait 1" onerror="this.style.display='none';" />
+              <div class="gallery-overlay">
+                <span class="gallery-overlay-label">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  Buka di Drive
+                </span>
+              </div>
+            </a>
+
+            <a class="gallery-item" href="https://drive.google.com/file/d/GANTI_ID_FOTO_2/view" target="_blank">
+              <img src="images/foto-2.jpg" alt="Urban Portrait 2" onerror="this.style.display='none';" />
+              <div class="gallery-overlay">
+                <span class="gallery-overlay-label">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  Buka di Drive
+                </span>
+              </div>
+            </a>
+
+            <a class="gallery-item" href="https://drive.google.com/file/d/GANTI_ID_FOTO_3/view" target="_blank">
+              <img src="images/foto-3.jpg" alt="Urban Portrait 3" onerror="this.style.display='none';" />
+              <div class="gallery-overlay">
+                <span class="gallery-overlay-label">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  Buka di Drive
+                </span>
+              </div>
+            </a>
+
+            <a class="gallery-item tall" href="https://drive.google.com/file/d/GANTI_ID_FOTO_4/view" target="_blank">
+              <img src="images/foto-4.jpg" alt="Urban Portrait 4" onerror="this.style.display='none';" />
+              <div class="gallery-overlay">
+                <span class="gallery-overlay-label">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  Buka di Drive
+                </span>
+              </div>
+            </a>
+
+            <a class="gallery-item tall" href="https://drive.google.com/file/d/GANTI_ID_FOTO_5/view" target="_blank">
+              <img src="images/foto-5.jpg" alt="Urban Portrait 5" onerror="this.style.display='none';" />
+              <div class="gallery-overlay">
+                <span class="gallery-overlay-label">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  Buka di Drive
+                </span>
+              </div>
+            </a>
+
+            <a class="gallery-item" href="https://drive.google.com/file/d/GANTI_ID_FOTO_6/view" target="_blank">
+              <img src="images/foto-6.jpg" alt="Urban Portrait 6" onerror="this.style.display='none';" />
+              <div class="gallery-overlay">
+                <span class="gallery-overlay-label">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  Buka di Drive
+                </span>
+              </div>
+            </a>
+
+          </div>
+
+          <!-- CTA ke folder Google Drive -->
+          <div class="drive-cta">
+            <a href="https://drive.google.com/drive/folders/GANTI_ID_FOLDER_FOTO" target="_blank" class="btn-drive">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+              Lihat Semua Foto di Google Drive
+            </a>
+            <span style="font-size:0.8rem; color:var(--text-3)">Resolusi penuh tersedia di Drive</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ══════════════════════════════
+           TAB 2 — UI/UX
+      ══════════════════════════════ -->
+      <div class="tab-panel" id="tab-uiux">
+        <div class="project-header">
+          <span class="project-cat-badge">UI/UX Design</span>
+          <h1 class="project-title">Aplikasi <em>E-Learning</em></h1>
+          <p class="project-desc">
+            Desain lengkap aplikasi belajar online — mulai dari user research, wireframing, hingga high-fidelity prototype. Mencakup 40+ layar beserta design system yang komprehensif.
+          </p>
+          <div class="project-meta">
+            <div class="meta-item">
+              <p class="meta-label">Scope</p>
+              <p class="meta-value">Research · UX · UI · Prototype</p>
+            </div>
+            <div class="meta-item">
+              <p class="meta-label">Tools</p>
+              <p class="meta-value">Figma · FigJam</p>
+            </div>
+            <div class="meta-item">
+              <p class="meta-label">Layar</p>
+              <p class="meta-value">40+ Screens</p>
+            </div>
+            <div class="meta-item">
+              <p class="meta-label">Tahun</p>
+              <p class="meta-value">2024</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-section">
+          <p class="section-label">Screenshot Desain</p>
+          <div class="gallery-grid cols-2">
+
+            <a class="gallery-item wide" href="https://drive.google.com/file/d/GANTI_ID_UIUX_1/view" target="_blank">
+              <img src="images/uiux-1.jpg" alt="E-Learning Onboarding" onerror="this.style.display='none';" />
+              <div class="gallery-overlay">
+                <span class="gallery-overlay-label">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  Buka di Drive
+                </span>
+              </div>
+            </a>
+
+            <a class="gallery-item" href="https://drive.google.com/file/d/GANTI_ID_UIUX_2/view" target="_blank">
+              <img src="images/uiux-2.jpg" alt="E-Learning Dashboard" onerror="this.style.display='none';" />
+              <div class="gallery-overlay">
+                <span class="gallery-overlay-label">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  Buka di Drive
+                </span>
+              </div>
+            </a>
+
+            <a class="gallery-item" href="https://drive.google.com/file/d/GANTI_ID_UIUX_3/view" target="_blank">
+              <img src="images/uiux-3.jpg" alt="E-Learning Course" onerror="this.style.display='none';" />
+              <div class="gallery-overlay">
+                <span class="gallery-overlay-label">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  Buka di Drive
+                </span>
+              </div>
+            </a>
+
+            <a class="gallery-item" href="https://drive.google.com/file/d/GANTI_ID_UIUX_4/view" target="_blank">
+              <img src="images/uiux-4.jpg" alt="E-Learning Design System" onerror="this.style.display='none';" />
+              <div class="gallery-overlay">
+                <span class="gallery-overlay-label">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  Buka di Drive
+                </span>
+              </div>
+            </a>
+
+          </div>
+
+          <div class="drive-cta">
+            <a href="https://www.figma.com/design/Xkju3Ho3dI4zHJKLaBNoLL/PostureFit---Indonesia-Atletis?node-id=4-2&t=gDZotQlqgUCAiYot-1" target="_blank" class="btn-drive">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 5.5A3.5 3.5 0 0 1 8.5 2H12v7H8.5A3.5 3.5 0 0 1 5 5.5z"/><path d="M12 2h3.5a3.5 3.5 0 1 1 0 7H12V2z"/><path d="M12 12.5a3.5 3.5 0 1 1 7 0 3.5 3.5 0 1 1-7 0z"/><path d="M5 19.5A3.5 3.5 0 0 1 8.5 16H12v3.5a3.5 3.5 0 1 1-7 0z"/><path d="M5 12.5A3.5 3.5 0 0 1 8.5 9H12v7H8.5A3.5 3.5 0 0 1 5 12.5z"/></svg>
+              Buka di Figma
+            </a>
+            <a href="https://drive.google.com/drive/folders/GANTI_ID_FOLDER_UIUX" target="_blank" class="btn-outline-sm">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+              Export di Google Drive
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ══════════════════════════════
+           TAB 3 — 3D MODELING
+      ══════════════════════════════ -->
+      <div class="tab-panel" id="tab-3d">
+        <div class="project-header">
+          <span class="project-cat-badge">Blender · 3D Modeling</span>
+          <h1 class="project-title">3D Environment <em>& Asset</em></h1>
+          <p class="project-desc">
+            Pembuatan aset 3D untuk keperluan game dan visualisasi. Meliputi modeling, texturing, UV unwrapping, dan rendering environment mulai dari gaya low-poly hingga realistis.
+          </p>
+          <div class="project-meta">
+            <div class="meta-item">
+              <p class="meta-label">Scope</p>
+              <p class="meta-value">Modeling · Texturing · Render</p>
+            </div>
+            <div class="meta-item">
+              <p class="meta-label">Tools</p>
+              <p class="meta-value">Blender · Substance Painter</p>
+            </div>
+            <div class="meta-item">
+              <p class="meta-label">Gaya</p>
+              <p class="meta-value">Low-poly · Realistis</p>
+            </div>
+            <div class="meta-item">
+              <p class="meta-label">Tahun</p>
+              <p class="meta-value">2024–2025</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-section">
+          <p class="section-label">Render & Showcase</p>
+          <div class="gallery-grid">
+
+            <a class="gallery-item" href="https://drive.google.com/file/d/GANTI_ID_3D_1/view" target="_blank">
+              <img src="images/3d-1.jpg" alt="3D Asset 1" onerror="this.style.display='none';" />
+              <div class="gallery-overlay">
+                <span class="gallery-overlay-label">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  Buka di Drive
+                </span>
+              </div>
+            </a>
+
+            <a class="gallery-item" href="https://drive.google.com/file/d/GANTI_ID_3D_2/view" target="_blank">
+              <img src="images/3d-2.jpg" alt="3D Asset 2" onerror="this.style.display='none';" />
+              <div class="gallery-overlay">
+                <span class="gallery-overlay-label">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  Buka di Drive
+                </span>
+              </div>
+            </a>
+
+            <a class="gallery-item" href="https://drive.google.com/file/d/GANTI_ID_3D_3/view" target="_blank">
+              <img src="images/3d-3.jpg" alt="3D Wireframe" onerror="this.style.display='none';" />
+              <div class="gallery-overlay">
+                <span class="gallery-overlay-label">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  Buka di Drive
+                </span>
+              </div>
+            </a>
+
+            <a class="gallery-item wide" href="https://drive.google.com/file/d/GANTI_ID_3D_4/view" target="_blank">
+              <img src="images/3d-4.jpg" alt="3D Environment" onerror="this.style.display='none';" />
+              <div class="gallery-overlay">
+                <span class="gallery-overlay-label">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  Buka di Drive
+                </span>
+              </div>
+            </a>
+
+            <a class="gallery-item" href="https://drive.google.com/file/d/GANTI_ID_3D_5/view" target="_blank">
+              <img src="images/3d-5.jpg" alt="3D Texture" onerror="this.style.display='none';" />
+              <div class="gallery-overlay">
+                <span class="gallery-overlay-label">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  Buka di Drive
+                </span>
+              </div>
+            </a>
+
+          </div>
+
+          <div class="drive-cta">
+            <a href="https://drive.google.com/drive/folders/GANTI_ID_FOLDER_3D" target="_blank" class="btn-drive">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+              Lihat Semua File di Google Drive
+            </a>
+            <span style="font-size:0.8rem; color:var(--text-3)">Termasuk file .blend & render resolusi tinggi</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ══════════════════════════════
+           TAB 4 — GAME DEV
+      ══════════════════════════════ -->
+      <div class="tab-panel" id="tab-game">
+        <div class="project-header">
+          <span class="project-cat-badge">Unity · C# · Game Dev</span>
+          <h1 class="project-title">Truck Simulator <em>Game</em></h1>
+          <p class="project-desc">
+            Game simulasi mengemudi truk berbasis Unity dengan fisika kendaraan realistis menggunakan WheelCollider. Dilengkapi sistem kamera orbit gaya Forza, speedometer UI, engine audio state machine, dan pause menu yang modular.
+          </p>
+          <div class="project-meta">
+            <div class="meta-item">
+              <p class="meta-label">Engine</p>
+              <p class="meta-value">Unity 2022+</p>
+            </div>
+            <div class="meta-item">
+              <p class="meta-label">Bahasa</p>
+              <p class="meta-value">C#</p>
+            </div>
+            <div class="meta-item">
+              <p class="meta-label">Fitur</p>
+              <p class="meta-value">Physics · Camera · Audio · UI</p>
+            </div>
+            <div class="meta-item">
+              <p class="meta-label">Tahun</p>
+              <p class="meta-value">2025</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-section">
+          <p class="section-label">Screenshot & Gameplay</p>
+          <div class="gallery-grid">
+
+            <a class="gallery-item wide" href="https://drive.google.com/file/d/GANTI_ID_GAME_1/view" target="_blank">
+              <img src="images/game-1.jpg" alt="Truck Simulator Gameplay" onerror="this.style.display='none';" />
+              <div class="gallery-overlay">
+                <span class="gallery-overlay-label">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  Buka di Drive
+                </span>
+              </div>
+            </a>
+
+            <a class="gallery-item" href="https://drive.google.com/file/d/GANTI_ID_GAME_2/view" target="_blank">
+              <img src="images/game-2.jpg" alt="Truck Simulator UI" onerror="this.style.display='none';" />
+              <div class="gallery-overlay">
+                <span class="gallery-overlay-label">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  Buka di Drive
+                </span>
+              </div>
+            </a>
+
+            <a class="gallery-item" href="https://drive.google.com/file/d/GANTI_ID_GAME_3/view" target="_blank">
+              <img src="images/game-3.jpg" alt="Truck Simulator Camera" onerror="this.style.display='none';" />
+              <div class="gallery-overlay">
+                <span class="gallery-overlay-label">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  Buka di Drive
+                </span>
+              </div>
+            </a>
+
+            <a class="gallery-item" href="https://drive.google.com/file/d/GANTI_ID_GAME_4/view" target="_blank">
+              <img src="images/game-4.jpg" alt="Truck Simulator Pause Menu" onerror="this.style.display='none';" />
+              <div class="gallery-overlay">
+                <span class="gallery-overlay-label">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  Buka di Drive
+                </span>
+              </div>
+            </a>
+
+            <a class="gallery-item wide" href="https://drive.google.com/file/d/GANTI_ID_GAME_5/view" target="_blank">
+              <img src="images/game-5.jpg" alt="Truck Simulator Scene" onerror="this.style.display='none';" />
+              <div class="gallery-overlay">
+                <span class="gallery-overlay-label">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  Buka di Drive
+                </span>
+              </div>
+            </a>
+
+          </div>
+
+          <div class="drive-cta">
+            <a href="https://drive.google.com/drive/folders/GANTI_ID_FOLDER_GAME" target="_blank" class="btn-drive">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+              Lihat Semua di Google Drive
+            </a>
+            <span style="font-size:0.8rem; color:var(--text-3)">Screenshot, video gameplay, dan build tersedia</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── BOTTOM NAV ── -->
+      <div class="bottom-nav">
+        <a href="index.html#projects" class="nav-back" style="font-size:0.9rem;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+          Kembali ke Semua Proyek
+        </a>
+        <a href="index.html#contact" class="btn-outline-sm">Hubungi Saya →</a>
+      </div>
+
+    </div>
+  </main>
+
+  <script>
+    // ── Theme toggle ──
+    const toggle = document.getElementById('themeToggle');
+    const html = document.documentElement;
+    const saved = localStorage.getItem('theme') || 'light';
+    html.setAttribute('data-theme', saved);
+    toggle.addEventListener('click', () => {
+      const next = html.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+      html.setAttribute('data-theme', next);
+      localStorage.setItem('theme', next);
+    });
+
+    // ── Tab switching ──
+    const tabBtns = document.querySelectorAll('.tab-btn');
+    const tabPanels = document.querySelectorAll('.tab-panel');
+
+    tabBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const target = btn.dataset.tab;
+        tabBtns.forEach(b => b.classList.remove('active'));
+        tabPanels.forEach(p => p.classList.remove('active'));
+        btn.classList.add('active');
+        document.getElementById('tab-' + target).classList.add('active');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    });
+
+    // ── Open tab from URL hash ──
+    // Contoh: project-detail.html#game → buka tab game
+    const hash = location.hash.replace('#', '');
+    if (hash && document.getElementById('tab-' + hash)) {
+      document.querySelector(`[data-tab="${hash}"]`)?.click();
+    }
+    
+  </script>
+</body>
+</html>
