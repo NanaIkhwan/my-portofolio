@@ -4,12 +4,103 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Detail Proyek — Najwa Ikhwan Maulana</title>
+  <link rel="icon" type="image/png" href="fav%20icon/boy.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="project-detail.css" />
+  <style>
+    /* ── Page entrance ── */
+    body { animation: pageIn 0.45s ease forwards; }
+    @keyframes pageIn { from { opacity: 0; } to { opacity: 1; } }
+
+    /* ── Custom Cursor ── */
+    .cursor-dot {
+      width: 8px; height: 8px;
+      background: var(--accent-warm);
+      border-radius: 50%;
+      position: fixed; top: 0; left: 0;
+      pointer-events: none; z-index: 99999;
+      will-change: transform;
+      transition: width .2s cubic-bezier(.4,0,.2,1), height .2s cubic-bezier(.4,0,.2,1), opacity .2s ease;
+    }
+    .cursor-ring {
+      width: 36px; height: 36px;
+      border: 1.5px solid rgba(196,119,58,0.4);
+      border-radius: 50%;
+      position: fixed; top: 0; left: 0;
+      pointer-events: none; z-index: 99998;
+      will-change: transform;
+      transition: width .22s cubic-bezier(.4,0,.2,1), height .22s cubic-bezier(.4,0,.2,1), border-color .22s ease;
+    }
+    .cursor-dot.hovering { width: 12px; height: 12px; opacity:.8; }
+    .cursor-ring.hovering { width: 56px; height: 56px; border-color: rgba(196,119,58,0.7); }
+
+    /* ── Scroll reveal ── */
+    .pd-reveal {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity .7s cubic-bezier(.4,0,.2,1), transform .7s cubic-bezier(.4,0,.2,1);
+    }
+    .pd-reveal.visible { opacity: 1; transform: translateY(0); }
+
+    /* ── Gallery item hover scale ── */
+    .gallery-item {
+      transition: transform .35s cubic-bezier(.4,0,.2,1), box-shadow .35s cubic-bezier(.4,0,.2,1);
+    }
+    .gallery-item:hover {
+      transform: scale(1.025) translateY(-3px);
+      box-shadow: 0 12px 36px rgba(26,24,20,0.14);
+      z-index: 2;
+    }
+
+    /* ── Tab button underline slide ── */
+    .tab-btn {
+      position: relative;
+      transition: color .25s, background .25s;
+    }
+    .tab-btn::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 50%; right: 50%;
+      height: 2px;
+      background: var(--accent-warm);
+      transition: left .3s cubic-bezier(.4,0,.2,1), right .3s cubic-bezier(.4,0,.2,1);
+      border-radius: 2px;
+    }
+    .tab-btn.active::after { left: 0; right: 0; }
+
+    /* ── Tab panel fade-slide ── */
+    .tab-panel.active {
+      animation: tabIn .45s cubic-bezier(.4,0,.2,1) forwards;
+    }
+    @keyframes tabIn {
+      from { opacity: 0; transform: translateY(16px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ── Back button hover arrow ── */
+    .nav-back {
+      transition: color .25s, gap .25s;
+    }
+    .nav-back:hover { gap: 0.75rem; }
+    .nav-back svg { transition: transform .25s; }
+    .nav-back:hover svg { transform: translateX(-3px); }
+
+    /* ── Meta item stagger ── */
+    .meta-item {
+      opacity: 0;
+      transform: translateY(12px);
+      transition: opacity .5s, transform .5s;
+    }
+    .meta-item.visible { opacity: 1; transform: translateY(0); }
+  </style>
 </head>
 <body>
+
+  <!-- CUSTOM CURSOR -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
 
   <!-- LIGHTBOX -->
   <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Lightbox">
@@ -54,6 +145,7 @@
         <button class="tab-btn" data-tab="uiux">UI/UX Design</button>
         <button class="tab-btn" data-tab="3d">3D Modeling</button>
         <button class="tab-btn" data-tab="game">Game Dev</button>
+        <button class="tab-btn" data-tab="mobile">Mobile App</button>
       </div>
 
       <!-- ══════ TAB 1 — FOTOGRAFI ══════ -->
@@ -326,6 +418,35 @@
         </div>
       </div>
 
+      <!-- ══════ TAB 5 — MOBILE APP ══════ -->
+      <div class="tab-panel" id="tab-mobile">
+        <div class="project-header">
+          <span class="project-cat-badge">Flutter · Mobile</span>
+          <h1 class="project-title">Aplikasi CekKomposisi</h1>
+          <p class="project-desc">
+            Aplikasi CekKomposisi : Pendeteksi Kandungan Pada Bahan Makanan dan Minuman. Membantu pengguna mengetahui informasi gizi dan komposisi produk dengan mudah.
+          </p>
+          <div class="project-meta">
+            <div class="meta-item"><p class="meta-label">Platform</p><p class="meta-value">Android</p></div>
+            <div class="meta-item"><p class="meta-label">Tools</p><p class="meta-value">Flutter · Dart</p></div>
+            <div class="meta-item"><p class="meta-label">Kategori</p><p class="meta-value">Mobile App</p></div>
+            <div class="meta-item"><p class="meta-label">Tahun</p><p class="meta-value">2024</p></div>
+          </div>
+        </div>
+
+        <div class="gallery-section">
+          <p class="section-label">Preview & Interface</p>
+          <div class="gallery-grid">
+            <div class="gallery-item wide" data-src="images/project-1.jpg" data-alt="Tampilan Aplikasi">
+              <img src="images/project-1.jpg" alt="Tampilan Aplikasi CekKomposisi" onerror="this.parentElement.innerHTML = '<div class=\'gallery-placeholder\' style=\'grid-column: span 2; min-height: 250px; border: 2px dashed var(--border); border-radius: var(--radius);\'>Belum ada tangkapan layar untuk proyek ini.</div>';" />
+              <div class="gallery-overlay"><span class="gallery-overlay-label">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                Perbesar</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div class="bottom-nav">
         <a href="index.html#projects" class="nav-back" style="font-size:0.9rem;">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
@@ -417,6 +538,91 @@
       if (e.key === 'Escape')     closeLightbox();
       if (e.key === 'ArrowLeft')  navigate(-1);
       if (e.key === 'ArrowRight') navigate(1);
+    });
+
+    /* ===== CUSTOM CURSOR ===== */
+    const cursorDot  = document.getElementById('cursorDot');
+    const cursorRing = document.getElementById('cursorRing');
+    if (cursorDot && cursorRing && window.matchMedia('(pointer:fine)').matches) {
+      let ringX = 0, ringY = 0, mouseX = 0, mouseY = 0;
+      document.addEventListener('mousemove', (e) => {
+        mouseX = e.clientX; mouseY = e.clientY;
+        cursorDot.style.left = mouseX + 'px';
+        cursorDot.style.top  = mouseY + 'px';
+      });
+      (function animateRing() {
+        ringX += (mouseX - ringX) * 0.12;
+        ringY += (mouseY - ringY) * 0.12;
+        cursorRing.style.left = ringX + 'px';
+        cursorRing.style.top  = ringY + 'px';
+        requestAnimationFrame(animateRing);
+      })();
+      document.querySelectorAll('a, button, .gallery-item, .tab-btn').forEach(el => {
+        el.addEventListener('mouseenter', () => {
+          cursorDot.classList.add('hovering');
+          cursorRing.classList.add('hovering');
+        });
+        el.addEventListener('mouseleave', () => {
+          cursorDot.classList.remove('hovering');
+          cursorRing.classList.remove('hovering');
+        });
+      });
+    }
+
+    /* ===== SCROLL REVEAL ===== */
+    // Mark elements for reveal
+    document.querySelectorAll(
+      '.project-header, .gallery-section, .drive-cta, .project-breadcrumb, .project-tabs'
+    ).forEach(el => el.classList.add('pd-reveal'));
+
+    const revealObs = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          revealObs.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' });
+    document.querySelectorAll('.pd-reveal').forEach(el => revealObs.observe(el));
+
+    /* ===== META ITEMS STAGGER ===== */
+    const metaObs = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        const items = entry.target.querySelectorAll('.meta-item');
+        items.forEach((item, i) => {
+          setTimeout(() => item.classList.add('visible'), i * 90);
+        });
+        metaObs.unobserve(entry.target);
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.project-meta').forEach(el => metaObs.observe(el));
+
+    /* ===== GALLERY ITEM STAGGER on TAB SWITCH ===== */
+    function staggerGalleryItems(panel) {
+      const items = panel.querySelectorAll('.gallery-item');
+      items.forEach((item, i) => {
+        item.style.opacity = '0';
+        item.style.transform = 'translateY(20px)';
+        setTimeout(() => {
+          item.style.transition = 'opacity .5s ease, transform .5s ease';
+          item.style.opacity = '1';
+          item.style.transform = 'translateY(0)';
+        }, 60 + i * 70);
+      });
+    }
+
+    // Trigger on active panel load
+    const activePanel = document.querySelector('.tab-panel.active');
+    if (activePanel) setTimeout(() => staggerGalleryItems(activePanel), 200);
+
+    // Hook into tab switching
+    tabBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const panelId = 'tab-' + btn.dataset.tab;
+        const panel = document.getElementById(panelId);
+        if (panel) setTimeout(() => staggerGalleryItems(panel), 50);
+      });
     });
   </script>
 </body>
